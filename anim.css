@@ -1,0 +1,84 @@
+body {
+    animation: fadein ease 1.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.sidenav-in {
+    animation: sidenav-in 0.7s forwards;
+}
+
+.sidenav-out {
+    animation: sidenav-out 0.7s forwards;
+}
+
+@keyframes sidenav-in {
+    100% {
+        transform: translateX(0);
+    }
+    0% {
+        transform: translateX(-300%);
+    }
+}
+
+@keyframes sidenav-out {
+    100% {
+        transform: translateX(-300%);
+    }
+    0% {
+        transform: translateX(0);
+    }
+}
+
+.main-up {
+    animation: transform-up 0.7s forwards;
+}
+
+.main-down {
+    animation: transform-down 0.7s forwards;
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+
+@keyframes transform-up {
+    100% {
+        transform: translateY(0);
+    }
+    0% {
+        transform: translateY(-300%);
+    }
+}
+
+@keyframes transform-down {
+    100% {
+        transform: translateY(0);
+    }
+    0% {
+        transform: translateY(300%);
+    }
+}
+
+@keyframes next-site {
+    100% {
+        transform: translateX(-300%);
+    }
+    0% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes previous-site {
+    100% {
+        transform: translateX(0);
+    }
+    0% {
+        transform: translateX(300%);
+    }
+}
