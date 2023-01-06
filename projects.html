@@ -16,38 +16,26 @@
     <link rel="icon" type="image/png" href="https://media.discordapp.net/attachments/977187119925719055/1049599671246528563/MT_6jegyhgt5y0p0ttd365ep9aaz.jpg"/>
     <title>Loskubalos</title>
 
-    <meta property="og:site_name" content="Loskubalos.tk">
+    <meta property="og:site_name" content="Loskubalos.eu.org">
     <meta property="og:title" content="Jakubek">
     <meta property="og:description" content="Awesome Indie game developer">
     <meta property="og:type" content="product">
-    <meta property="og:url" content="https://loskubalos.tk">
+    <meta property="og:url" content="https://loskubalos.eu.org">
     <meta content="summary_large_image" name="twitter:card">
     <meta content="@Loskubaloss" name="twitter:site">
     <meta property="og:image" content="https://media.discordapp.net/attachments/977187119925719055/1051153383559548938/20221210_152628_0000.png">
     <meta content="https://media.discordapp.net/attachments/977187119925719055/1051153383559548938/20221210_152628_0000.png" name="twitter:image">
     <meta name="theme-color" content="#171819">
 </head>  
-<body>
-  <div id="mySidebar" class="sidenav">
-    <a class="icons" href="#"><i class="fa-solid fa-bars" onclick="hideMenu()"></i></a>
-    <a href="/" class="bold">Loskubalos<span class="heighlight">.tk</span></a>
-    <a class="main" href="/">Home</a>
-    <a class="main" href="#yourlink"><span class="heighlight">< Projects ></span></a>
-    <a class="main" href="#yourlink">Contact</a>
-    <a class="icons" href="mailto:help@lookoftruth.pl"><i class="fa-solid fa-envelope heighlight"></i></a>
-    <a class="icons" href="https://twitter.com/Loskubaloss"><i class="fa-brands fa-twitter"></i></a>
-    <a class="icons" href="https://lookoftruth.pl/dc"><i class="fa-brands fa-discord"></i></a>
-  </div>
-
+<body class="home">
   <ul class="main-up nav-pc">
     <li class="first-child nav-space-left"><a href="/" class="bold">Loskubalos<span class="heighlight">.tk</span></a></li>
-    <li class="middle-child that"><a class="main" href="/">Home</a></li>
-    <li class="middle-child that"><a class="heighlight main" href="#yourlink">< Projects ></a></li>
-    <li class="middle-child that"><a class="main" href="#yourlink">Contact</a></li>
+    <li class="middle-child that"><a class="heighlight main" href="/">< Home ></a></li>
+    <li class="middle-child that"><a class="/projects" href="#yourlink">Projects</a></li>
+    <li class="middle-child that"><a class="contact" href="#yourlink">Contact</a></li>
     <li class="last-child that nav-space-right"><a class="icons" href="mailto:help@lookoftruth.pl"><i class="fa-solid fa-envelope heighlight"></i></a></li>
     <li class="last-child that"><a class="icons" href="https://twitter.com/Loskubaloss"><i class="fa-brands fa-twitter"></i></a></li>
     <li class="last-child that"><a class="icons" href="https://lookoftruth.pl/dc"><i class="fa-brands fa-discord"></i></a></li>
-    <li class="last-child bars nav-space-right"><a class="icons" href="#"><i class="fa-solid fa-bars" onclick="showMenu()"></i></a></li>
   </ul>
   <header class="projects">
     <h4 class="main-up"><span class="main-up">Projects</span></h4>
@@ -90,18 +78,5 @@
   }
   
   window.addEventListener('mousemove', moveCursor)
-  
-  var navLinks = document.getElementById("mySidebar")
-  
-  window.addEventListener("load", () => {
-      navLinks.style.right = "-250px";
-    });
-  
-  function showMenu(){
-      navLinks.style.right = "0";
-  }
-  function hideMenu(){
-      navLinks.style.right = "-250px";
-      
-  }
+ 
   </script>
