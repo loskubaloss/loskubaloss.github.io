@@ -5,12 +5,6 @@ body {
     overflow-x: hidden;
     overflow-y: hidden;
 }
-.sidenav {
-    display: none;
-}
-.nav-pc .bars {
-    display: none;
-}
 html {
     cursor: none !important;
 }
@@ -27,6 +21,7 @@ ul {
     position: -webkit-sticky; /* Safari */
     position: sticky;
     top: 0;
+    padding: 14px 16px;
 }
   
 li a {
@@ -45,26 +40,62 @@ li a.icons:hover {
     background-color: #111;
 }
 
-.middle-child {
+.site {
     float: left;
-    position:relative;
+}
+.main-nav {
+    float: left;
     left:15%;
+    position: relative;
+}
+.icons {
+    float: right;
+}
+.icon-bar {
+    float: right;
 }
 
-.first-child {
-    float:left;
+#overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #2d2e32;
+    z-index: 3;
 }
 
-.last-child {
-    float:right;
+#overlay-menu {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 24px;
+    color: white;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    text-align: center;
 }
 
-.nav-space-right {
-    margin-right:150px;
+#overlay-menu li {
+  padding: 32px;
 }
 
-.nav-space-left {
-    margin-left:150px;
+@media screen and (max-width:750px) {
+    .main-nav {
+        display:none;
+    }
+    .icons {
+        display:none;
+    }
+}
+
+@media screen and (min-width:750px) {
+    .icon-bar {
+        display: none;
+    }
 }
 
 .link {
@@ -100,10 +131,15 @@ li a.icons:hover {
 header.main {
     padding-top: 115px;
     text-align: center;
-    background: #2d2e32;
     color: white;
     padding-left:15%;
     text-align:left;
+    position: relative;
+    z-index: 2;
+}
+header.main div {
+    text-align: left;
+    width: 75%;
 }
 header.projects {
     padding-top: 115px;
@@ -127,7 +163,7 @@ header h4 span {
     border-radius: 5px;
     background: #64f4ac;
     padding: 5px;
-    width: 200px;
+    max-width: 200px;
     height: 150px;
 }
 
@@ -135,14 +171,17 @@ header h4 span {
     border-radius: 5px;
     background: #64f4ac;
     padding: 5px;
-    width: 200px;
+    max-width: 200px;
     height: 150px;
     color: #2d2e32;
 }
-
 img.bg {
-    float: right;
-    width: 1000px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    max-width: 1000px;
+    z-index: 1;
 }
 
 .bold {
@@ -164,12 +203,12 @@ img.bg {
     left:0;
     transform: -50%, -50%;
     border-radius: 50%;
-    z-index: 1;
+    z-index: 100;
     pointer-events: none;
 }
 
 .logo{
-    width: 5em;
+    max-width: 5em;
     position: absolute;
     right: 10%;
 }
@@ -177,7 +216,7 @@ img.bg {
 .logo-rounded {
     object-fit: cover;
     border-radius: 50%;
-    width: 5em;
+    max-width: 5em;
     position: absolute;
     right: 10%;
 }
@@ -209,7 +248,7 @@ header.project a {
     border-radius: 10px;
     background: #25262a;
     padding: 20px;
-    width: 500px;
+    max-width: 500px;
     height: 150px;
 }
 
@@ -217,7 +256,7 @@ header.project a {
     border-radius: 10px;
     background: #25262a;
     padding: 20px;
-    width: 500px;
+    max-width: 500px;
     height: 300px;
 }
 
@@ -225,7 +264,7 @@ header.project a {
 
 
 input {
-    width: 100%;
+    max-width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -242,14 +281,12 @@ input {
     padding: 12px 20px;
     border: none;
     border-radius: 4px;
-    cursor: pointer;
 }
 
 button {
     background-color: transparent;
     background-repeat: no-repeat;
     border: none;
-    cursor: pointer;
     overflow: hidden;
     outline: none;
 }
