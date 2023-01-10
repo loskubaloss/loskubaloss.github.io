@@ -1,0 +1,103 @@
+.padding {
+    padding: 14px 16px;
+}
+
+.site {
+    float: left;
+}
+
+.main-nav {
+    float: left;
+    left:15%;
+    position: relative;
+}
+.icons {
+    float: right;
+}
+
+.icon-bar {
+    float: right;
+}
+
+.link {
+    color:#64f4ac;
+    border-bottom: 3px dotted #64f4ac;
+    text-decoration: none;
+}
+
+.link-clear {
+    color:#64f4ac;
+    text-decoration: none;
+}
+
+.link-clear:hover {
+    color:#18c46e;
+    text-decoration: none;
+}
+
+.link:hover {
+    color:#18c46e;
+    border-bottom: 3px dotted #18c46e;
+    text-decoration: none;
+}
+
+.heighlight {
+    color:#64f4ac;
+}
+
+.fa-space {
+    margin-right: 1em;
+}
+
+.bg {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    max-width: 1000px;
+    z-index: 1;
+}
+
+.bold {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.cursor {
+    width: 15px;
+    height: 15px;
+    border: 3px solid #18c46e;
+    position: fixed;
+    top:0;
+    left:0;
+    transform: -50%, -50%;
+    border-radius: 50%;
+    z-index: 100;
+    pointer-events: none;
+}
+
+.logo-rounded {
+    object-fit: cover;
+    border-radius: 50%;
+    max-width: 5em;
+    position: absolute;
+    right: 10%;
+}
+
+.elements-projects {
+    border-radius: 10px;
+    background: #25262a;
+    padding: 20px;
+    max-width: 500px;
+    height: 150px;
+}
+
+.element.contact {
+    border-radius: 10px;
+    background: #25262a;
+    padding: 20px;
+    max-width: 500px;
+    max-height: 300px;
+    height: 100%;
+    width: 100%;
+}
