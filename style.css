@@ -98,6 +98,12 @@ li a.icons:hover {
     }
 }
 
+@media screen and (min-height:750px) {
+    img.bg {
+        display: none;
+    }
+}
+
 .link {
     color:#64f4ac;
     border-bottom: 3px dotted #64f4ac;
