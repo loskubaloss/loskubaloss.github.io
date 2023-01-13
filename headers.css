@@ -39,3 +39,14 @@ header.contact {
   position: relative;
   z-index: 2;
 }
+header.project {
+  padding-top: 115px;
+  text-align: center;
+  color: white;
+  padding-left:15%;
+  padding-right:15%;
+  padding-bottom:115px;
+  text-align:left;
+  position: relative;
+  z-index: 2;
+}

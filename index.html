@@ -60,8 +60,9 @@
       <p class="main-down">I am a small indie game Developer making my first game <a class="link" href="https://lookoftruth.pl">LookOfTruth</a></p>
       <p class="main-down" style="color:grey">* Sorry the site is not mobile responsive yet.</p>
     </div>
+    <div id="text"></div>
   </header>
-  <img class="bg" src="https://cdn.discordapp.com/attachments/977187119925719055/1059875565944979456/StiBotProjects.png" alt="BG" />
+  <img id="img" class="bg" src="https://cdn.discordapp.com/attachments/977187119925719055/1059875565944979456/StiBotProjects.png" alt="BG" />
   <div class="cursor"></div>
 
 
@@ -87,6 +88,28 @@
       document.getElementById("overlay").style.display = "none";
     }
   </script>
+  <script>
+    const text = document.getElementById("text");
+    const img = document.getElementById("img");
+
+    function setImgHeight() {
+      const textHeight = text.offsetHeight;
+      const screenHeight = window.innerHeight;
+      const newImgHeight = Math.min(textHeight, screenHeight - textHeight);
+      img.style.height = newImgHeight + "px";
+    }
+
+    setImgHeight();
+
+    window.addEventListener("resize", setImgHeight);
+  </script>
 </body>
 </html>
 
+<style>
+#img{
+    display: block;
+    overflow: hidden;
+}
+
+</style>
